@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu cherches la fight ?!??</title>
+    <style>
+      .player-card {
+        padding: 8px;
+        margin: 8px;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Entre dans l'arène:</h1>
+
+    <div>
+      <div id="player-cards-wrapper"></div>
+      <!-- <div>
+        <h2>FIGHTER (<span id="fighter-players-name"></span>)</h2>
+        <h4>Caractéristiques:</h4>
+        <ul>
+          <li>Points de vie : 12</li>
+          <li>Points de dégât: 4</li>
+          <li>Points de mana: 40</li>
+          <li>
+            Super attaque: 5 points de dommage à la victime + 2 points de dégât
+            en moins à chaque attaque d'un adversaire (sur ce tour) - perte de
+            20 mana.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>PALADIN (<span id="paladin-players-name"></span>)</h2>
+        <h4>Caractéristiques:</h4>
+        <ul>
+          <li>Points de vie : 16</li>
+          <li>Points de dégât: 3</li>
+          <li>Points de mana: 160</li>
+          <li>
+            Super attaque: 4 points de dommage à la victime + 5 points de vie -
+            perte de 40 mana.
+          </li>
+        </ul>
+      </div> -->
+
+      <div id="player-5"></div>
+
+      <hr />
+
+      <div id="gameDiv">
+        <p>Nombre de tours restants : <span id="nbTurnLeft"></span></p>
+
+        <div id="recapDiv"></div>
+
+        <div>
+          <h2 id="playerTurn">
+            <span id="name-player"></span>, à toi de jouer !
+          </h2>
+
+          <label>Choisis le joueur que tu veux toucher:</label>
+
+          <select id="selected-victim">
+            <option selected disabled value>-- Liste de tes ennemis --</option>
+          </select>
+
+          <button id="simpleAttack">Attaque simple !</button>
+          <button id="manaAttack">Ma super attaque !</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
